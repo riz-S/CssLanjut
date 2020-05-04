@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alex+Brush&family=Lora:wght@600;700&display=swap"
+    />
     <title>Tentang Saya</title>
   </head>
   <body>
@@ -11,23 +15,23 @@
       <img class="profil" src="img/profil.jpg" alt="Profil Saya" />
       <ul class="button">
         <li>
-          Beranda
+          <div class="text">Beranda</div>
           <div class="bottom-indicator"></div>
         </li>
         <li>
-          Portofolio
+          <div class="text">Portofolio</div>
           <div class="bottom-indicator"></div>
         </li>
         <li>
-          Galeri
+          <div class="text">Galeri</div>
           <div class="bottom-indicator"></div>
         </li>
         <li>
-          Tentang Saya
-          <div class="bottom-indicator"></div>
+          <div class="text">Tentang Saya</div>
+          <div class="bottom-indicator" id="indicator-aktif"></div>
         </li>
         <li>
-          Contact Me!
+          <div class="text">Contact Me!</div>
           <div class="bottom-indicator"></div>
         </li>
       </ul>
@@ -38,8 +42,8 @@
       <img src="img/background.png" alt="Background" />
     </div>
     <div class="even-section" id="intro">
-      <div class="outer-circle"></div>
-      <img src="img/profil.jpg" alt="Profilku" />
+      <div class="outer-circle">
+      <img src="img/profil.jpg" alt="Profilku" /></div>
       <h2>Hai, aku Riza</h2>
       <p>
         Duis consequat occaecat veniam ex. Veniam mollit veniam ea ad elit.
@@ -50,9 +54,9 @@
     </div>
     <div class="odd-section" id="riwayatP">
       <h2>Tentang Aku</h2>
-      <div class="teks-riwayatP">
-        <div class="outer-circle"></div>
-        <img src="img/graduate.png" alt="Pendidikan Icon" />
+      <div class="teks">
+        <div class="outer-circle">
+        <img src="img/graduate.png" alt="Pendidikan Icon" /></div>
         <h4>Riwayat Pendidikan</h4>
         <p>
           Duis consequat occaecat veniam ex. Veniam mollit veniam ea ad elit.
@@ -64,8 +68,9 @@
       </div>
     </div>
     <div class="even-section" id="organisasi">
-      <div class="outer-circle"></div>
-      <img src="img/teamwork.png" alt="Organisasi Icon" />
+      <div class="teks">
+      <div class="outer-circle">
+      <img src="img/teamwork.png" alt="Organisasi Icon" /></div>
       <h4>Pengalaman Organisasi</h4>
       <p>
         Duis consequat occaecat veniam ex. Veniam mollit veniam ea ad elit.
@@ -75,9 +80,11 @@
         eiusmod sunt qui est.
       </p>
     </div>
+    </div>
     <div class="odd-section" id="skill">
-      <div class="outer-circle"></div>
-      <img src="img/idea.png" alt="Skill Icon" />
+      <div class="teks">
+      <div class="outer-circle">
+      <img src="img/idea.png" alt="Skill Icon" /></div>
       <h4>Kompetensi Keahlian Bidang IT</h4>
       <p>
         Duis consequat occaecat veniam ex. Veniam mollit veniam ea ad elit.
@@ -86,6 +93,7 @@
         nisi. Incididunt consectetur est pariatur laborum adipisicing fugiat
         eiusmod sunt qui est.
       </p>
+    </div>
     </div>
     <div class="footer-section">
       <ul class="navbar-bawah">

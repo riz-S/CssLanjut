@@ -1,0 +1,195 @@
+element.style{
+  position: relative;
+}
+body{
+  margin: 0;
+  font-size: 16px;
+}
+.button {
+  display: inline-block;
+  list-style-type: none;
+  position: absolute;
+  right: 2.0625rem;
+  margin: 0;
+}
+.button li {
+  display: inline-block;
+}
+.button .text {
+  text-align: center;
+  padding-top: 1.875rem;
+  padding-bottom: 1.375rem;
+  font-family: "Lora", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #2e867a;
+}
+.bottom-indicator {
+  width: 8rem;
+  height: 0.5rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  background-color: #e4fcb0;
+}
+.even-section {
+  background-color: #2e867a;
+  color: #e4fcb0;
+  overflow: auto;
+  height: 32rem;
+}
+.even-section img,.odd-section img{
+  margin: 0.99rem 0.95rem 0.95rem 0.99rem;
+  height: 18.4375rem;
+  border-radius: 50%;
+}
+.even-section .outer-circle, .odd-section .outer-circle{
+  width: 20.3125rem;
+  border-radius: 50%;
+  margin: 5.8225rem 2.4475rem 0rem;
+}
+.even-section h4, .odd-section h4{
+  font-family: 'Lora',serif;
+  font-style: normal;
+  font-size: 3rem;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+  margin-top: 8.0625rem;
+}
+.even-section p, .odd-section p{
+  font-family: "Alegreya", serif;
+  font-style: normal;
+  font-size: 1.625rem;
+  margin-block-end: 0rem;
+  line-height: 2.3rem;
+}
+.even-section .outer-circle{
+  background-color: #2e867a;
+  border: 0.375rem solid #e4fcb0;
+  float: right;
+}
+.even-section h4{
+  margin-right: 2rem;
+  text-align: right;
+}
+.even-section p{
+  text-align: right;
+  margin-left: 15.1875rem;
+  margin-right: 26.1875rem;
+}
+.navbar {
+  height: 5rem;
+  background-color: #e4fcb0;
+}
+.navbar img {
+  padding: 0.75rem 2.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+.odd-section {
+  background-color: #e4fcb0;
+  color: #2e867a;
+  overflow: auto;
+  height: 32rem;
+}
+.odd-section .outer-circle{
+  background-color: #e4fcb0;
+  border: 0.375rem solid #2e867a;
+  float: left;
+}
+.odd-section h4{
+  margin-left: 2rem;
+  text-align: left;
+}
+.odd-section p{
+  text-align: left;
+  margin-right: 15.1875rem;
+  margin-left: 26.1875rem;
+}
+.teks{
+  display: inline-block;
+}
+#desc {
+  font-family: "Alegreya", serif;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: normal;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-align: center;
+}
+#intro{
+  height: 36rem;
+  overflow: auto;
+}
+#intro img{
+  display: block;
+  margin: 0.8125rem;
+  height: 15.375rem;
+  border-radius: 50%;
+}
+#intro .outer-circle{
+  width: 17rem;
+  border-radius: 50%;
+  background-color: #2e867a;
+  border: 0.375rem solid #e4fcb0;
+  margin: 2.25rem auto 1.375rem !important;
+  display: block;
+  float: none;
+}
+#intro h2{
+  text-align: center;
+  font-family: 'Lora',serif;
+  font-style: normal;
+  font-size: 2.75rem;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+}
+#intro p{
+  font-family: "Alegreya", serif;
+  font-style: normal;
+  font-size: 1.625rem;
+  text-align: center;
+  margin: 1rem 5rem 0rem;
+}
+#home {
+  height: 43rem;
+}
+#home img{
+  display: block;
+  margin: 0.875rem auto 0;
+  height: 30.25rem;
+  border-radius: 0%;
+}
+#indicator-aktif {
+  background-color: #2e867a;
+}
+#judul {
+  font-family: "Alex Brush", cursive;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  height: 9.3125rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9.375rem;
+  text-align: center;
+}
+#riwayatP{
+  height: 36rem;
+  margin: 0rem auto 0rem auto;
+}
+#riwayatP h2{
+  text-align: center;
+  font-family: 'Lora',serif;
+  font-style: normal;
+  font-size: 3.5rem;
+  margin-block-start: 1rem;
+  margin-block-end: 0rem;
+}
+#riwayatP .outer-circle{
+  margin: 3.4475rem 2.4475rem 0rem;
+}
+#riwayatP h4{
+  margin-top: 5.6875rem;
+}
