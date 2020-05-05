@@ -1,9 +1,13 @@
-element.style{
+element.style {
   position: relative;
 }
-body{
+body {
   margin: 0;
   font-size: 16px;
+}
+body a{
+  text-decoration: none;
+  color: inherit;
 }
 .button {
   display: inline-block;
@@ -32,50 +36,71 @@ body{
   border-top-right-radius: 0.25rem;
   background-color: #e4fcb0;
 }
+.dot {
+  height: 0.625rem;
+  width: 0.625rem;
+  display: inline-block;
+  background-color: #e4fcb0;
+  border-radius: 50%;
+  opacity: 70%;
+}
+.dot+.dot{
+  margin-left: 2rem;
+}
 .even-section {
   background-color: #2e867a;
   color: #e4fcb0;
   overflow: auto;
   height: 32rem;
 }
-.even-section img,.odd-section img{
+.even-section img,
+.odd-section img {
   margin: 0.99rem 0.95rem 0.95rem 0.99rem;
   height: 18.4375rem;
   border-radius: 50%;
 }
-.even-section .outer-circle, .odd-section .outer-circle{
+.even-section .outer-circle,
+.odd-section .outer-circle {
   width: 20.3125rem;
   border-radius: 50%;
   margin: 5.8225rem 2.4475rem 0rem;
 }
-.even-section h4, .odd-section h4{
-  font-family: 'Lora',serif;
+.even-section h4,
+.odd-section h4 {
+  font-family: "Lora", serif;
   font-style: normal;
   font-size: 3rem;
   margin-block-start: 0rem;
   margin-block-end: 0rem;
   margin-top: 8.0625rem;
 }
-.even-section p, .odd-section p{
+.even-section p,
+.odd-section p {
   font-family: "Alegreya", serif;
   font-style: normal;
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   margin-block-end: 0rem;
   line-height: 2.3rem;
 }
-.even-section .outer-circle{
+.even-section .outer-circle {
   background-color: #2e867a;
   border: 0.375rem solid #e4fcb0;
   float: right;
 }
-.even-section h4{
+.even-section h4 {
   margin-right: 2rem;
   text-align: right;
 }
-.even-section p{
+.even-section p {
   text-align: right;
   margin-left: 15.1875rem;
   margin-right: 26.1875rem;
+}
+.footer-section {
+  background-color: #63043b;
+  color: #e4fcb0;
+  overflow: auto;
+  height: 12rem;
 }
 .navbar {
   height: 5rem;
@@ -87,28 +112,60 @@ body{
   border-radius: 50%;
   display: inline-block;
 }
+.navbar-bawah {
+  list-style-type: none;
+  text-align: center;
+}
+.navbar-bawah li {
+  display: inline-block;
+  font-size: 1rem;
+  margin-left: 1.6875rem;
+}
 .odd-section {
   background-color: #e4fcb0;
   color: #2e867a;
   overflow: auto;
   height: 32rem;
 }
-.odd-section .outer-circle{
+.odd-section .outer-circle {
   background-color: #e4fcb0;
   border: 0.375rem solid #2e867a;
   float: left;
 }
-.odd-section h4{
+.odd-section h4 {
   margin-left: 2rem;
   text-align: left;
 }
-.odd-section p{
+.odd-section p {
   text-align: left;
   margin-right: 15.1875rem;
   margin-left: 26.1875rem;
 }
-.teks{
+.reference{
+  margin: 1rem auto 0rem !important;
+  text-align: center;
+  font-family: "Alegreya", serif;
+  font-size: 1rem;
+}
+.reference p{
+  margin-bottom: 0.5rem;
+}
+.reference table{
   display: inline-block;
+}
+.reference tr{
+  text-align: left;
+}
+.reference td{
+  padding: 0rem 1rem;
+}
+.teks {
+  display: inline-block;
+}
+#batas {
+  height: 0.625rem;
+  width: 6.5rem;
+  margin: 0.5rem auto 0.5rem !important;
 }
 #desc {
   font-family: "Alegreya", serif;
@@ -119,17 +176,26 @@ body{
   margin-block-end: 0;
   text-align: center;
 }
-#intro{
+#home {
+  height: 43rem;
+}
+#home img {
+  display: block;
+  margin: 0.875rem auto 0;
+  height: 30.25rem;
+  border-radius: 0%;
+}
+#intro {
   height: 36rem;
   overflow: auto;
 }
-#intro img{
+#intro img {
   display: block;
   margin: 0.8125rem;
   height: 15.375rem;
   border-radius: 50%;
 }
-#intro .outer-circle{
+#intro .outer-circle {
   width: 17rem;
   border-radius: 50%;
   background-color: #2e867a;
@@ -138,29 +204,17 @@ body{
   display: block;
   float: none;
 }
-#intro h2{
+#intro h2 {
   text-align: center;
-  font-family: 'Lora',serif;
+  font-family: "Lora", serif;
   font-style: normal;
   font-size: 2.75rem;
   margin-block-start: 0rem;
   margin-block-end: 0rem;
 }
-#intro p{
-  font-family: "Alegreya", serif;
-  font-style: normal;
-  font-size: 1.625rem;
+#intro p {
   text-align: center;
   margin: 1rem 5rem 0rem;
-}
-#home {
-  height: 43rem;
-}
-#home img{
-  display: block;
-  margin: 0.875rem auto 0;
-  height: 30.25rem;
-  border-radius: 0%;
 }
 #indicator-aktif {
   background-color: #2e867a;
@@ -175,21 +229,32 @@ body{
   font-size: 9.375rem;
   text-align: center;
 }
-#riwayatP{
+#logo {
+  height: 2.25rem;
+  width: 15.7rem;
+  margin: 1rem auto 0rem !important;
+}
+#logo img {
+  height: 2.25rem;
+}
+#logo a + a{
+  margin-left: 4rem;
+}
+#riwayatP {
   height: 36rem;
   margin: 0rem auto 0rem auto;
 }
-#riwayatP h2{
+#riwayatP h2 {
   text-align: center;
-  font-family: 'Lora',serif;
+  font-family: "Lora", serif;
   font-style: normal;
   font-size: 3.5rem;
   margin-block-start: 1rem;
   margin-block-end: 0rem;
 }
-#riwayatP .outer-circle{
+#riwayatP .outer-circle {
   margin: 3.4475rem 2.4475rem 0rem;
 }
-#riwayatP h4{
+#riwayatP h4 {
   margin-top: 5.6875rem;
 }
