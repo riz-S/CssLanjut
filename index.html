@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylescopy.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="" />
     <link
       rel="stylesheet"
@@ -12,37 +13,40 @@
   </head>
   <body>
     <div class="navbar">
-      <img class="profil" src="img/profil.jpg" alt="Profil Saya" />
-      <ul class="button">
+      <img src="img/profil.jpg" alt="Profil Saya" />
+      <ul class="navbar-button">
         <li>
-          <div class="text"><a href="#">Beranda</a></div>
-          <div class="bottom-indicator"></div>
+          <a href="#">Beranda</a>
+          <div class="navbar-button-indicator"></div>
         </li>
         <li>
-          <div class="text"><a href="#" >Portofolio</a></div>
-          <div class="bottom-indicator"></div>
+          <a href="#">Portofolio</a>
+          <div class="navbar-button-indicator"></div>
         </li>
         <li>
-          <div class="text"><a href="#">Galeri</a></div>
-          <div class="bottom-indicator"></div>
+          <a href="#">Galeri</a>
+          <div class="navbar-button-indicator"></div>
         </li>
         <li>
-          <div class="text"><a href="#">Tentang Saya</a></div>
-          <div class="bottom-indicator" id="indicator-aktif"></div>
+          <a href="#">Tentang Saya</a>
+          <div
+            class="navbar-button-indicator"
+            id="navbar-button-indicator-aktif"
+          ></div>
         </li>
         <li>
-          <div class="text"><a href="#">Contact Me!</a></div>
-          <div class="bottom-indicator"></div>
+          <a href="#">Contact Me!</a>
+          <div class="navbar-button-indicator"></div>
         </li>
       </ul>
     </div>
-    <div class="odd-section" id="home">
-      <h1 id="judul">I'm Riza</h1>
-      <h2 id="desc">Calon [REDACTED]</h2>
+    <div class="section-ganjil" id="home">
+      <h1 id="home-judul">I'm Riza</h1>
+      <h2 id="home-desc">Calon [REDACTED]</h2>
       <img src="img/background.png" alt="Background" />
     </div>
-    <div class="even-section" id="intro">
-      <div class="outer-circle">
+    <div class="section-genap" id="intro">
+      <div class="img-border">
         <img src="img/profil.jpg" alt="Profilku" />
       </div>
       <h2>Hai, aku Riza</h2>
@@ -53,10 +57,10 @@
         nisi.
       </p>
     </div>
-    <div class="odd-section" id="riwayatP">
+    <div class="section-ganjil" id="riwayatP">
       <h2>Tentang Aku</h2>
-      <div class="teks">
-        <div class="outer-circle">
+      <div class="content">
+        <div class="img-border">
           <img src="img/graduate.png" alt="Pendidikan Icon" />
         </div>
         <h4>Riwayat Pendidikan</h4>
@@ -69,9 +73,9 @@
         </p>
       </div>
     </div>
-    <div class="even-section" id="organisasi">
-      <div class="teks">
-        <div class="outer-circle">
+    <div class="section-genap">
+      <div class="content">
+        <div class="img-border">
           <img src="img/teamwork.png" alt="Organisasi Icon" />
         </div>
         <h4>Pengalaman Organisasi</h4>
@@ -84,9 +88,9 @@
         </p>
       </div>
     </div>
-    <div class="odd-section" id="skill">
-      <div class="teks">
-        <div class="outer-circle">
+    <div class="section-ganjil">
+      <div class="content">
+        <div class="img-border">
           <img src="img/idea.png" alt="Skill Icon" />
         </div>
         <h4>Kompetensi Keahlian Bidang IT</h4>
@@ -99,25 +103,31 @@
         </p>
       </div>
     </div>
-    <div class="footer-section">
-      <ul class="navbar-bawah">
+    <div class="section-footer">
+      <ul class="section-footer-navbar">
         <li><a href="#">Beranda</a></li>
         <li><a href="#">Portofolio</a></li>
         <li><a href="#">Galeri</a></li>
         <li><a href="#">Tentang Saya</a></li>
         <li><a href="#">Contact Me!</a></li>
       </ul>
-      <div id="logo">
-       <a href="https://www.instagram.com/riz.stwn/" target="_blank"><img src="img/instagram.png" alt="Instagram" /></a>
-       <a href="https://twitter.com/TypozJr" target="_blank"><img src="img/twitter.png" alt="Twitter" /></a>
-       <a href="https://pin.it/4IlXz9e" target="_blank"><img src="img/pinterest.png" alt="Pinterest" /></a>
+      <div class="section-footer-logo-container">
+        <a href="https://www.instagram.com/riz.stwn/" target="_blank"
+          ><img src="img/instagram.png" alt="Instagram"
+        /></a>
+        <a href="https://twitter.com/TypozJr" target="_blank"
+          ><img src="img/twitter.png" alt="Twitter"
+        /></a>
+        <a href="https://pin.it/4IlXz9e" target="_blank"
+          ><img src="img/pinterest.png" alt="Pinterest"
+        /></a>
       </div>
-      <div id="batas">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
+      <div class="section-footer-dot-container">
+        <div class="section-footer-dot"></div>
+        <div class="section-footer-dot"></div>
+        <div class="section-footer-dot"></div>
       </div>
-      <div class="reference">
+      <div class="section-footer-reference">
         <p>Tertarik dengan ilustrasi diatas? Cek mereka di bawah ini</p>
         <table>
           <tr>
@@ -127,18 +137,22 @@
               >
             </td>
             <td>
-              <a href="https://www.flaticon.com/authors/popcorns-arts" target="_blank"
+              <a
+                href="https://www.flaticon.com/authors/popcorns-arts"
+                target="_blank"
                 >Icon Pond from Flaticon</a
               >
             </td>
             <td>
-              <a href="https://www.flaticon.com/authors/vectors-market" target="_blank"
-              >Vectors Market from Flaticon</a
+              <a
+                href="https://www.flaticon.com/authors/vectors-market"
+                target="_blank"
+                >Vectors Market from Flaticon</a
               >
             </td>
             <td>
               <a href="https://www.flaticon.com/authors/becris" target="_blank"
-              >Becris from Flaticon</a
+                >Becris from Flaticon</a
               >
             </td>
           </tr>
